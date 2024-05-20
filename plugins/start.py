@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
     
     [
                     InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('👩‍💻 Dev', url='https://t.me/When_the_night_falls_my_soul_sea')
+                    InlineKeyboardButton('👩‍💻 Dev', url='https://t.me/actanibot')
                 
         
     ]
@@ -123,18 +123,18 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
-            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink3),
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ဝင်ပါ ၁", url=client.invitelink2),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •ဝင်ပါ ၂", url=client.invitelink3),
         ],
         [
-            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink),
+            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •ဝင်ပါ ၃", url=client.invitelink),
         ]
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = '• ɴᴏᴡ ᴄʟɪᴄᴋ ʜᴇʀᴇ •',
+                    text = '• ɴᴏᴡ ᴄʟɪᴄᴋ ʜᴇʀᴇ • ဝင်ပြီးရင်ဒီမှာနှိပ်ပါ',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
